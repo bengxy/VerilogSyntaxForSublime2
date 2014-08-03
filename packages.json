@@ -1,0 +1,20 @@
+{
+	"schema_version": "1.0",
+	"packages": [
+		{
+			"name": "Verilog-Syntax",
+			"description": "Verilog syntax support for Sublime Text 2.",
+			"author": "Bengxy",
+			"homepage": "https://github.com/bengxy/VerilogSyntaxForSublime2",
+			"last_modified": "2014-07-24 10:40:00",
+			"platforms": {
+				"*": [
+					{
+						"version": "1.0",
+						"url": "https://github.com/bengxy/VerilogSyntaxForSublime2"
+					}
+				]
+			}
+		}
+	]
+}

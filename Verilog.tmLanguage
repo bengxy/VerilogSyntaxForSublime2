@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>fileTypes</key>
+		<array>
+			<string>v</string>
+			<string>V</string>
+		</array>
+		<key>name</key>
+		<string>Verilog</string>
+		<key>patterns</key>
+		<array>
+			<!-- each pattern in dict -->
+			<dict>
+				<!-- reg wire input output -->
+				<key>match</key>
+				<string>\b(wire|reg|input|output)\b</string>
+				<key>name</key>
+				<string>storage.type.Verilog</string>
+			</dict>
+			<dict>
+				<!-- comment -->
+				<key>match</key>
+				<string>(/\*[^\*]*\*(\*|(([^/&^\*])[^\*]*\*))*/)||(//(.)*)</string>
+				<key>name</key>
+				<string>comment.block.Verilog</string>
+			</dict>
+			<dict>
+				<!-- parameter -->
+				<key>match</key>
+				<string>\b(parameter)\b</string>
+				<key>name</key>
+				<string>variable.parameter.Verilog</string>
+			</dict>
+			<dict>
+				<!-- #include|module -->
+				<key>match</key>
+				<string>(#\b(include)\b)|(\b(module|endmodule)\b)</string>
+				<key>name</key>
+				<string>entity.name.class.Verilog</string>
+			</dict>
+			<dict>
+				<!-- keyword : (always|for|while) -->
+				<key>match</key>
+				<string>(\balways\b([ ])*\@)|(\b(for|while|initial)\b)</string>
+				<key>name</key>
+				<string>keyword.control.Verilog</string>
+			</dict>
+			<dict>
+				<!-- op branch keyword: or|and|if|else -->
+				<key>match</key>
+				<string>\b(or|and|if|else)\b</string>
+				<key>name</key>
+				<string>constant.character.Verilog</string>
+			</dict>
+			<dict>
+				<!-- wrap: case|endcase|begin|end -->
+				<key>match</key>
+				<string>\b(begin|end|case|endcase)\b</string>
+				<key>name</key>
+				<string>string.quote.Verilog</string>
+			</dict>
+			<dict>
+				<!-- module: -->
+				<key>match</key>
+				<string></string>
+				<key>name</key>
+				<string>entity.name.function.Verilog</string>
+			</dict>
+			<dict>
+				<!-- number: hex binary decimal-->
+				<key>match</key>
+				<string>\b((([0-9a-fA-F])+'[h|b|o][0-9a-fA-F]+)|[0-9]+)\b</string>
+				<key>name</key>
+				<string>variable.parameter.Verilog</string>
+			</dict>
+		</array>
+		
+		<key>scopeName</key>
+		<string>source.Verilog</string>
+	</dict>
+	<key>uuid</key>
+	<string>756b48a5-3588-3ea7-9974-307db3e54ff1</string>
+</plist>

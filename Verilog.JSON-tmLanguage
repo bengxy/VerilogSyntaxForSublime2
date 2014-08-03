@@ -1,0 +1,50 @@
+{	
+	"name":"Verilog",
+	"scopeName":"source.Verilog",
+	"fileTypes":["v","V"],
+	"patterns":[
+	{
+		"match":"\b(wire|reg|input|output)\b",
+		"name":"storage.type.Verilog"
+	},
+	{
+		"match":"(/\*[^\*]*\*(\*|(([^/&^\*])[^\*]*\*))*/)||(//(.)*)",
+		"name":"comment.block.Verilog"
+	},
+	{
+		"match":"\b(parameter)\b",
+		"name":"variable.parameter.Verilog"
+	},
+	{
+		"match":"(#\b(include)\b)|(\b(module|endmodule)\b)",
+		"name":"entity.name.class.Verilog"
+	},
+	{
+		"match":"(\balways\b([ ])*\@)|(\b(for|while|initial)\b)",
+		"name":"keyword.control.Verilog"
+	},
+	{
+		"match":"\b(or|and|if|else)\b",
+		"name":"constant.character.Verilog"
+	},
+	{
+		"match":"\b(or|and|if|else)\b",
+		"name":"constant.character.Verilog"
+	},
+	{
+		"match":"\b(begin|end|case|endcase)\b",
+		"name":"string.quote.Verilog"
+	},
+	{
+		"match":"\b((([0-9a-fA-F])+'[h|b|o][0-9a-fA-F]+)|[0-9]+)\b",
+		"name":"variable.parameter.Verilog"
+	}
+	],
+	"uuid":"756b48a5-3588-3ea7-9974-307db3e54ff1"
+}
+
+
+
+
+
+
